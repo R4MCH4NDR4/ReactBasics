@@ -13,6 +13,12 @@ import EventBind from './components/EventBind'
 import Parent from './components/Parent';
 import UserGreet from './components/UserGreet';
 import NameList from './components/NameList';
+import Stylesheet from './components/Stylesheet';
+import Inline from './components/Inline';
+import './components/style.css';
+import styles from './components/style.module.css'
+import ReactForm from './components/ReactForm';
+import LifeCycleA from './components/LifeCycleA';
 //Functional type component
 // function App() {
 //   return (
@@ -42,7 +48,13 @@ class App extends React.Component {
       <div className='App'>
         <header className='App-header'>
         <img src={logo} className="App-logo" alt="logo" />
-        <NameList></NameList>
+        <LifeCycleA></LifeCycleA>
+        {/* <ReactForm></ReactForm> */}
+        {/* <h1 className='error'>I'm from regular css file</h1>
+        <h1 className={styles.success}>I'm from css module</h1> */}
+        {/* <Inline></Inline> */}
+        {/* <Stylesheet primary={true}></Stylesheet> */}
+        {/* <NameList></NameList> */}
         {/* <UserGreet></UserGreet> */}
         {/* <Parent></Parent> */}
         {/* <GreetComponent first_name = 'Ram' last_name = 'Reddy'></GreetComponent>
