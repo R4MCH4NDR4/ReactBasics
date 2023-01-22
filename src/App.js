@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import React from 'react';
+import React, { Fragment } from 'react';
 import GreetComponent from './components/Greet' //default import syntax
 //import {Greet} from './components/Greet' // named import
 import Welcome  from './components/Welcome';
@@ -19,6 +19,12 @@ import './components/style.css';
 import styles from './components/style.module.css'
 import ReactForm from './components/ReactForm';
 import LifeCycleA from './components/LifeCycleA';
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
+import PureComp from './components/PureComp';
+import ParentComponent from './components/ParentComponent';
+import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
 //Functional type component
 // function App() {
 //   return (
@@ -48,7 +54,12 @@ class App extends React.Component {
       <div className='App'>
         <header className='App-header'>
         <img src={logo} className="App-logo" alt="logo" />
-        <LifeCycleA></LifeCycleA>
+        <FocusInput/>
+        {/* <RefsDemo/> */}
+         {/* <ParentComponent/> */}
+        {/* <FragmentDemo></FragmentDemo>
+        <Table/> */}
+        {/* <LifeCycleA></LifeCycleA> */}
         {/* <ReactForm></ReactForm> */}
         {/* <h1 className='error'>I'm from regular css file</h1>
         <h1 className={styles.success}>I'm from css module</h1> */}
