@@ -25,6 +25,16 @@ import PureComp from './components/PureComp';
 import ParentComponent from './components/ParentComponent';
 import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
+import FRParent from './components/FRParent';
+import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundry from './components/ErrorBoundry';
+import ClickCounter from './components/ClickCounter';
+import HoverComponent from './components/HoverComponent';
+import ComponentA from './components/ComponentA';
+import { UserProvider } from './components/userContext';
+import PostList from './HttpRequestComponent/PostList';
+import PostForm from './HttpRequestComponent/PostForm';
 //Functional type component
 // function App() {
 //   return (
@@ -54,7 +64,21 @@ class App extends React.Component {
       <div className='App'>
         <header className='App-header'>
         <img src={logo} className="App-logo" alt="logo" />
-        <FocusInput/>
+        <PostForm/>
+        {/* <PostList/> */}
+        {/* <UserProvider value="Ram">
+        <ComponentA/>
+        </UserProvider>
+        <ClickCounter name="Ram"/>
+        <HoverComponent name="Ram"/> */}
+        {/* <ErrorBoundry>
+        <Hero heroName = "Batman"/>
+        <Hero heroName = "SuperMan"/>
+        <Hero heroName = "Joker"/>
+        </ErrorBoundry> */}
+        {/* <PortalDemo/> */}
+        {/* <FRParent/> */}
+        {/* <FocusInput/> */}
         {/* <RefsDemo/> */}
          {/* <ParentComponent/> */}
         {/* <FragmentDemo></FragmentDemo>
